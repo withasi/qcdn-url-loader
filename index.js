@@ -1,7 +1,5 @@
 var qcdn = require('@q/qcdn');
 var loaderUtils = require("loader-utils");
-
-var chalk = require('chalk');
 var mime = require("mime");
 
 var CLC = require('cli-color');
