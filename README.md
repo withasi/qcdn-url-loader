@@ -3,6 +3,8 @@
 ## 描述
 结合[url-loader](https://www.npmjs.com/package/url-loader)和[qcdn](http://qnpm.qiwoo.org/package/@q/qcdn)的功能，相当于丰富url-loader的功能，最常见的场景：图片如果大于一定尺寸，则上传到公司的cdn上
 
+qnpm中有功能一样的[qcdn-loader](http://qnpm.qiwoo.org/package/@q/qcdn-loader)，但是不支持qcdn参数设置
+
 ## 安装
 `qnpm install --save-dev @q/qcdn-url-loader`
 
