@@ -26,7 +26,7 @@
             }
         ]
 ```
-参数详解：
+##参数详解：
 options中的参数和url-loader保持一致，qcdnOptions和qcdn中的options保持一致
 如果不传入qcdnOptions参数，则和url-loader功能一致
 
