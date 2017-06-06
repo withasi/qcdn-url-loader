@@ -1,6 +1,6 @@
 {
   "name": "@q/qcdn-url-loader",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "index.js",
   "scripts": {
     "build": "babel ./lib/qcdn-url-loader.js -o index.js"

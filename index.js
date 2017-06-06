@@ -28,9 +28,8 @@ module.exports = function (content) {
             var resourcePath = this.resourcePath;
             var callback = this.async();
             qcdn.upload(resourcePath, opts).then(function (res) {
-                console.log(JSON.stringify(opts))
-                console.log(CLC_NOTICE('\r\n 😎 ============ qcdn 上传' + resourcePath +' 到 ' + content + ' ============ 😎\r\n'));
                 var content = "module.exports = " + JSON.stringify(res[resourcePath]) + ";";
+                console.log(CLC_NOTICE('\r\n 😎 ============ qcdn 上传' + resourcePath +' 到 ' + content + ' ============ 😎\r\n'));
                 callback(null, content);
             }, function (err) {
                 console.log(CLC_WARN('\r\n 😎 ============ qcdn 上传失败:' + resourcePath + '\n' + err + ' ============ 😎\r\n'));
