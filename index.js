@@ -36,8 +36,8 @@ module.exports = function (content) {
         }
 
         //2）如果小于limit的，仍然走file-loader, 主要避免cdn上传不成功，web服务器上也保持一份图片，增加健壮性
-        //var fileLoader = require("file-loader");
-        //return fileLoader.call(this, content);
+        var fileLoader = require("file-loader");
+        return fileLoader.call(this, content);
     }
 }
 
